@@ -6,13 +6,12 @@ def parallel_processing(n, m, data):
     # create the output pairs
     time=0
     threads=[]
-    
+    maz = 0
     for i in range(m):
         if i<n:
             threads.append([i, int(data[i])])
             output.append([i,0])
-        else:
-            maz = 0
+        else: 
             for j in range(len(threads)):
                 if threads[j][1] < threads[maz][1]:
                     maz=j
@@ -38,6 +37,8 @@ def main():
     result=parallel_processing(n,m,data)
     
     # TODO: print out the results, each pair in it's own line
+    for pair in result:
+        print(pair[0], pair[1])
 
 
 
