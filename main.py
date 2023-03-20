@@ -10,8 +10,8 @@ def parallel_processing(n, m, data):
         if i<n:
             threads.append([i, int(data[i])])
             output.append([i,0])
-         else:
-            maz=0
+        else:
+            maz = 0
             for j in range(len(threads)):
                 if threads[j][1]<threads[maz][1]:
                     maz=j
