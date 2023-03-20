@@ -15,7 +15,7 @@ def parallel_processing(n, m, data):
             for j in range(len(threads)):
                 if threads[j][1]<threads[maz][1]:
                     maz=j
-        output.append([threads[maz][0],threads[maz][0])
+        output.append([threads[maz][0],threads[maz][0]])
         threads[maz][1]+=int(data[i])
         
             
