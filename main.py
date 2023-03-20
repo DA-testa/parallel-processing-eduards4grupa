@@ -5,7 +5,7 @@ def parallel_processing(n, m, data):
     # TODO: write the function for simulating parallel tasks, 
     # create the output pairs
     time=0
-    done=0
+    threads=[]
     for i in range(m):
         if i<n:
             threads.append([i, int(data[i])])
